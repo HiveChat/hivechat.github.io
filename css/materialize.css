@@ -5059,6 +5059,7 @@ button.btn-floating {
   text-transform: none;
 }
 
+/*drop down color*/
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
   background-color: #eee;
 }
