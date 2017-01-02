@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
