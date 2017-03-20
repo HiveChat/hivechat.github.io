@@ -844,34 +844,68 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 <ul>
 <li>Hive works in intranet (LAN) environment via User Datagram Protocol (UDP), so If LAN UDP is disabled by the router, Hive will not work correctly.</li>
-<li>After Hive 0.0.6, the communication protocol is changed. In the new protocol, messages are sent in the data format of JSON Object rather than C++ stream in the past. The aim of this change is to improve the compatibility of Hive. In the future, the communication block of Hive has a chance to be rewritten by Node.js. </li>
+<li>After Hive 0.0.6, the communication protocol is changed. In the new protocol, messages are sent in the data format of JSON Object rather than C++ binary stream in the past. The aim of this change is to improve the compatibility of Hive. In the future, the communication block of Hive has a chance to be rewritten by Node.js.</li>
 </ul>
 
-<h2 id="toc_2">Application:</h2>
+<h2 id="toc_2">File Transfer Server Plan</h2>
 
-<h3 id="toc_3">Threads:</h3>
+<ul>
+<li>Hive&#39;s file transfer server is still being built. And it works on TCP connection.</li>
+<li><p>There are many common problems that will be considered in the process:</p>
 
-<h4 id="toc_4">Main thread:</h4>
+<p><strong>TCP Sticky Package</strong></p>
+
+<blockquote>
+<ul>
+<li>A header is placed at the beginning of each package, indicating the size of the package. Then the read function will cut the stream at the end of the packages, so that they are divided.</li>
+</ul>
+</blockquote>
+
+<p><strong>Blocking Threads While Waiting</strong></p>
+
+<blockquote>
+<ul>
+<li>Apart from the fact that QTcpSocket is well designed and it doesn&#39;t block while waiting. TCP sockets are placed in a thread pool, which is reimplemented from Qt Library. </li>
+<li>Then the busy sockets are evenly distributed in every threads so that they can do their jobs efficiently.</li>
+<li>The code is not yet shown inside the project source code because I don&#39;t want to mess the repository up. I will include that very soon.</li>
+</ul>
+</blockquote>
+
+<p><strong>Compatibility Between Languages</strong></p>
+
+<blockquote>
+<ul>
+<li>Qt has its own binary format, which is called QDataStream. To communicate with programs written with other frameworks or languages, text is used instead of binary. </li>
+<li>All the packets will be sent in JSON format for easier connection with other languages.</li>
+</ul>
+</blockquote></li>
+</ul>
+
+<h2 id="toc_3">Application:</h2>
+
+<h3 id="toc_4">Threads:</h3>
+
+<h4 id="toc_5">Main thread:</h4>
 
 <ul>
 <li>Graphical User Interface (GUI) thread. This thread is created by Qt Library implicitly.</li>
 </ul>
 
-<h4 id="toc_5">Data thread:</h4>
+<h4 id="toc_6">Data thread:</h4>
 
 <ul>
 <li>This thread saves and synchronises user data and messages. To make Hive work fast in old computers with HDD, this thread is responsible for all the disk operation in order not to block the GUI thread.</li>
 <li>Location: ThreadData.h</li>
 </ul>
 
-<h4 id="toc_6">Network thread:</h4>
+<h4 id="toc_7">Network thread:</h4>
 
 <ul>
 <li>This thread is responsible for sending and receiving data to and from other users. All the data collected will be sent to Data thread to process.</li>
 <li>Location: ThreadNet.h</li>
 </ul>
 
-<h4 id="toc_7">Graphical User Interface:</h4>
+<h4 id="toc_8">Graphical User Interface:</h4>
 
 <ul>
 <li>Coming soon...</li>
