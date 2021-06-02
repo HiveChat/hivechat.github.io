@@ -1,0 +1,35 @@
+#Main-forum-list{
+border: deeppink;
+border-style: groove;
+height: fit-content;
+width: fit-content;
+margin-left: 500px;
+}
+
+
+.forum-list .myform .mytextarea{
+    margin: 0px; width: 750px; height: 70px;
+
+}
+#topic_input{
+    margin: 0px; width: 715px; height: 60px;
+    
+}
+
+#header_topic
+{
+   color: deeppink;
+   font-size: x-large;
+   align-self: baseline;
+}
+#commentbutton,#topicbutton
+{
+    background-color: dodgerblue;
+}
+#topic
+{
+    margin-left: 500px;
+}
+.error{
+    color:red;
+}

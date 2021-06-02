@@ -1,0 +1,252 @@
+.material-icon {
+    text-decoration: none;
+    font-family: "Material Icons";
+}
+
+.material-align-center a {
+    display: inline-flex;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.card {
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 10px #e7e7e7;
+    border: 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card-button {
+    font: inherit;
+    border: none;
+    align-self: center;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 5px 15px 0px 15px;
+    text-align: center;
+    text-decoration: none;
+    
+    /* -ms-transition: box-shadow 300ms linear;
+    transition: box-shadow 300ms linear; */
+}
+
+/* <button> */
+.card-btn, .card-highlight-btn {
+    margin: 10px 0px 10px 10px;
+    -webkit-transition: box-shadow 300ms linear;
+    -ms-transition: box-shadow 300ms linear;
+    transition: box-shadow 300ms linear;
+}
+
+.card-btn:hover, .card-highlight-btn:hover {
+    margin: 10px 0px 10px 10px;
+    box-shadow: 0px 0px 6px #dddddd;
+    -webkit-transition: box-shadow 100ms linear;
+    transition: box-shadow 100ms linear;
+}
+
+.card-btn {
+    color: #222222;
+    background-color: transparent;
+}
+
+.card-highlight-btn {
+    color: white;
+    background-image: -webkit-linear-gradient(-45deg, #e20078 20%, #cf006f 50%);
+    background-color: black;
+}
+
+.card-input[type="text"] {
+    font: inherit;
+    font-size: 16px;
+    outline: 0;
+    border: none;
+    border-radius: 8px;
+    margin: 5px 0px;
+    padding: 15px 15px 10px 15px;
+    background-color: white;
+    color: #666666;
+}
+
+.card-input[type="password"] {
+    font: inherit;
+    font-size: 16px;
+    outline: 0;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px 5px 15px;
+    margin: 5px 0px;
+    background-color: white;
+    color: #666666;
+}
+
+
+.user-card {
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    box-shadow: 0px 4px 20px #22222230;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    color:black;
+    width:65%;
+}
+
+.reg-card {
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    box-shadow: 0px 4px 20px #22222230;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    color:black;
+}
+
+.reg-form {
+    display: flex;
+    width: 100%;
+    margin: 20px 20px;
+}
+
+.reg-logo {
+    display: flex;
+    align-self: center;
+}
+
+.reg-logo a {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    /*float: left;*/
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(228, 0, 114);
+}
+
+.reg-btn-group {
+    margin-top: 50px;
+}
+
+.reg-error {
+    color: indianred;
+    padding: 5px;
+}
+
+#reg-name {
+    justify-content: space-between;
+}
+
+#reg-fstname {
+    width: 90px;
+}
+
+#reg-lstname {
+    width: 90px;
+    margin-left: 20px;
+}
+
+.search-box {
+    /* inherit from card */
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    max-width: 1030px;
+    /* min-width: 815px; */
+    width: 95%;
+
+    margin: 30px 40px;
+    padding: 6px 0px;
+}
+
+.search-box button {
+    margin: 0px 20px 0px 40px;
+    color: white;
+    background-image: -webkit-linear-gradient(-45deg, #d41079 20%, #cf006f 50%);
+    background-color: black;
+}
+
+.search-filter {
+    font: inherit;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 5px 0px 35px;
+}
+
+.search-filter-spacer {
+    align-self: center;
+    border-right: 1px solid #DDDDDD;
+    -webkit-flex: 0 1 0px;
+    -ms-flex: 0 1 0px;
+    flex: 0 1 0px;
+    height: 50px;
+}
+
+.search-filter label {
+    height: 28px;
+}
+
+.search-filter input[type="text"] {
+    font: inherit;
+    font-size: 16px;
+    outline: 0;
+    color: #666666;
+}
+
+.search-filter input[type="number"] {
+    font: inherit;
+    font-size: 16px;
+    outline: 0;
+    color: #666666;
+    border:none;
+
+    max-width: 100px;
+}
+
+.search-filter select {
+    font: inherit;
+    font-size: 16px;
+    color: #666666;
+    background-color: #ffffff;
+    /* box-shadow: 0px 0px 10px #e2e2e2; */
+    border: 0px;
+    border-radius: 10px;
+    margin-right: 20px;
+    outline: 0;
+}
+
+.search-title {
+    font: inherit;
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.search-not-found {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: #989898;
+}
+.search-user select{
+    font: inherit;
+    font-size: 16px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    margin: 3px 0px;
+    /*padding: 10px 10px 10px 10px;*/
+    background-color: white;
+    box-shadow: 0px 0px 10px #e2e2e2;
+    color: #666666;
+}

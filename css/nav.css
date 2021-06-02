@@ -1,0 +1,119 @@
+.nav {
+    overflow: hidden;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+    height: 60px;
+    top: 0;
+    padding: 0px 50px 0px 50px;
+    margin: 0px 0px 0px 0px;
+    background-color: #ffffff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    
+    display: flex;
+    justify-content: space-between;
+
+    /*No Select*/
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.nav .menu {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0px, 60px, 0px, 60px;
+    padding: 0px;
+    height: 100%
+}
+
+.nav .menu a {
+    white-space: nowrap;
+    font-size: 16px;
+    margin: 0px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    border-radius: 30px;
+
+    background-color: #ffffff;
+    -webkit-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.nav .menu a:hover {
+    background-color: #f4f4f4;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.nav .logo {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    /*justify-content: flex-end;*/
+    margin: 0px, 60px, 0px, 60px;
+    padding: 0px, 0px, 0px, 0px;
+    height: 100%
+}
+
+.logo a {
+    white-space: nowrap;
+    text-align: center;
+    /*float: left;*/
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(228, 0, 114);
+}
+
+.nav ul {
+    list-style-type: none;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    height: 100%;
+    padding: 0px;
+    /* border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s; */
+}
+
+.nav .menu .signup-btn {
+    border-radius: 30px;
+    background-color: #ffffff;
+
+    box-shadow: 0px 0px 6px #dddddd;
+    -webkit-transition: box-shadow 300ms linear;
+    transition: box-shadow 300ms linear;
+}
+
+.nav .menu .signup-btn:hover {
+    /* override tag a bg color transition*/
+    background-color: #ffffff; 
+
+    box-shadow: 0px 0px 8px #cccccc;
+    -webkit-transition: box-shadow 100ms linear;
+    transition: box-shadow 100ms linear;
+}
+
+.nav-fixed {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    left: auto;
+    right: auto;
+    box-sizing: border-box; 
+}
+
+#nav-spacer {
+    height: 60px;
+}

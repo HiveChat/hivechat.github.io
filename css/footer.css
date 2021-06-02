@@ -1,0 +1,65 @@
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin: 20px 0px;
+}
+
+.footer a {
+    color: #999999; 
+}
+
+.footer ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    list-style-type: none;
+    width: 85%;
+}
+
+.footer li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 35%;
+    font-size: 14px;
+}
+
+.footer h1 {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: normal ;
+    color: #666666;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.footer p {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: normal ;
+    color: #666666;
+    margin: 0px;
+}
+
+.bottom-line {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 22px;
+    background-color: rgb(94, 62, 102);
+    color: white;
+    font-size: 12px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}

@@ -1,0 +1,536 @@
+@import "./font.css";
+@import "./widget.css";
+@import "./nav.css";
+@import "./parallax.css";
+@import "./footer.css";
+@import "./discussion.css";
+@import "./markdown.css";
+
+
+body {
+    background: #ffffff;
+    /* font-family: 'Baloo Bhaina 2', cursive; */
+    /*THIS IS NOT GONNA WORK, BECAUSE THIS IS THE OUTERMOST ELEMENT!!!*/
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+button a {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+div {
+    display: flex;
+}
+
+form {
+    display: flex;
+}
+
+figcaption {
+    font-family: "Elephant";
+    text-align: center;
+    font-size: 11px;
+    text-decoration-color: lightgrey;
+    font-weight: lighter;
+}
+
+fieldset {
+    width: 100%;
+    border: 0px;
+    padding: 15px;
+    box-shadow: 0 0 10px 1px #ddd;
+    background-color: #ffffff;
+}
+
+fieldset legend {
+    color: #e1262a;
+    padding: 5px 10px;
+    background-color: #fcf8f7;
+    font-size: 32px;
+    border: none;
+    margin-left: 20px;
+    box-shadow: 0 0 5px 1px #ddd;
+}
+
+option {
+    margin: 20px;
+}
+
+input[type=text] {
+    font-size: 80%;
+    border: 0px;
+    outline: none;
+    height: 20px;
+    background-color: transparent;
+}
+
+.center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.white-background {
+    background: white;
+}
+
+.title-1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: serif;
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.figure {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+/* index.html*/
+
+.parallax-home {
+    background-image: url("../img/parallax-home.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.paralax-title-welcome {
+    font-size: 35px !important;
+    margin-left: 50px;
+    color: deeppink;
+}
+
+.heading-banner {
+    font-size: 35px;
+    margin: 30px 50px 0px 50px;
+    background-image: -webkit-linear-gradient(45deg, #911295 20%, #be108a 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-heading-banner {
+    font-size: 20px;
+    margin: 10px 50px 30px 50px;
+    background-image: -webkit-linear-gradient(45deg, #911295 20%, #be108a 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.intro-table img {
+    margin: 20px;
+}
+
+.intro-table ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 85%;
+}
+
+.intro-table li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.intro-table h1 {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: normal;
+    color: #666666;
+    font-size: 25px;
+    margin: 0px;
+}
+
+.intro-table p {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: normal;
+    color: #666666;
+    margin: 0px;
+}
+
+/* Events.html */
+
+.event-list {
+    margin: 40px 0px 80px 0px;
+    display: flex;
+    align-content: center;
+}
+
+.event-item {
+    width: 640px;
+    align-self: center;
+    padding: 0px 0px;
+    margin: 10px 0px;
+}
+
+.event-item-title {
+    line-height: 1.2;
+    text-align: left;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(228, 0, 114);
+    width: 600px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 20px 10px 20px;
+}
+
+.event-item-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 12px 20px 8px 20px;
+}
+
+.event-item-detail .material-icon {
+    padding-bottom: 6px;
+    padding-right: 5px;
+}
+
+.event-item-detail p {
+    align-self: flex-start;
+    font-size: 16px;
+    margin: 0px 0px;
+}
+
+.event-item-intro {
+    padding: 20px 0px;
+    text-align: left;
+    line-height: 1.2;
+    /* font-size: 20px !important; */
+}
+
+.event-item-hidden {
+    display: none;
+}
+
+.event-item-expanded .event-item-detail {
+    flex-direction: column;
+}
+
+.event-item-expanded .college-item {
+    height: 320px;
+}
+
+.event-item-expanded .event-item-hidden {
+    display: flex;
+}
+
+/* college.html*/
+
+.college-list {
+    margin: 40px 30px 80px 30px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.college-item-hidden {
+    display: none;
+}
+
+.college-basic-info {
+    justify-content: space-between  ;
+    width: 100%;
+}
+
+
+.college-item-expanded .college-basic-info {
+    flex-direction: column;
+}
+
+.college-item-expanded .college-item-hidden {
+    display: flex;
+}
+
+.college-item {
+    /* background-color: palevioletred; */
+    display: flex;
+    align-self: flex-start;
+    text-align: left;
+    margin: 20px;
+    padding: 0px;
+    width: 750px;
+    border-radius: 10px;
+}
+
+.college-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    width: 750px;
+    height: 160px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(228, 27, 94);
+}
+
+.college-item-rating {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.college-item-score {
+    margin: 0px;
+    padding: 3px 3px 0px 0px;
+    font-size: 20px;
+}
+
+.college-item-score::first-letter {
+    font-size: 150%;
+}
+
+.college-item-title {
+    font-size: 26px;
+    align-self: flex-start;
+    padding: 15px 20px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.college-item-detail {
+    margin: 0px;
+    padding: 10px;
+    /* min-width: 200px; */
+}
+
+.college-item-detail p {
+    font-size: 16px;
+    margin: 0px;
+    padding-left: 15px;
+    white-space: nowrap;
+}
+
+.college-item-detail span {
+    font-size: 16px;
+    margin: 0px;
+    padding: 10px;
+    padding-right: 25px;
+}
+
+.college-item-spacer {
+    align-self: center;
+    border-right: 1px solid #DDDDDD;
+    -webkit-flex: 0 1 0px;
+    -ms-flex: 0 1 0px;
+    flex: 0 1 0px;
+    padding: 0px 0px 0px 0px;
+    height: 160px;
+}
+
+/* signin */
+
+.signin-body {
+    margin-bottom: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.signin-headings {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.signin-card {
+    margin: 50px 50px 50px 50px !important;
+}
+
+/* guides */
+
+.guides-list {
+    margin: 100px 0px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.guides-card {
+    padding: 20px 40px;
+    margin: 20px 40px;
+    font-size: 26px;
+    width: 600px;
+    color: #f4f4f4;
+}
+
+.guides-card-purple {
+    background-image: -webkit-linear-gradient(45deg, #8b4ac8 20%, #a94bc0 50%);
+    background-color: black;
+}
+
+.guides-card-red {
+    background-image: -webkit-linear-gradient(45deg, #911295 20%, #be108a 50%);
+    background-color: black;
+}
+
+.overlay {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #fcf8f7ee;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-title-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    height: 80px;
+    width: 80%;
+}
+
+.overlay .close-btn {
+    font-size: 60px;
+    color: #555555;
+}
+
+.overlay .close-btn:hover {
+    color: #222222;
+}
+
+.overlay-content {
+    display: initial;
+    /* all: initial; */
+    width: 80%;
+    visibility: inherit;
+    margin-bottom: 100px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* deadline */
+.deadline-list {
+    margin: 40px 30px 80px 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.deadline-item {
+    /* background-color: palevioletred; */
+    display: flex;
+    align-self: center;
+    text-align: left;
+    margin: 20px;
+    padding: 0px;
+    width: 750px;
+    border-radius: 10px;
+}
+
+.deadline-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    width: 750px;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(228, 27, 94);
+}
+
+.deadline-item-title {
+    align-self: flex-start;
+    padding: 15px 20px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.deadline-item-detail {
+    margin: 0px;
+    padding: 10px;
+    /* min-width: 200px; */
+}
+
+.deadline-item-detail p {
+    font-size: 16px;
+    margin: 0px;
+    padding-left: 15px;
+    white-space: nowrap;
+}
