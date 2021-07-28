@@ -87,22 +87,22 @@
     transition: border-bottom 0.5s; */
 }
 
-.nav .menu .signup-btn {
+.nav .menu .highlight {
     border-radius: 30px;
-    background-color: #ffffff;
+    /* background-color: #ffddd5; */
 
-    box-shadow: 0px 0px 6px #dddddd;
+    /* box-shadow: 0px 0px 6px #dddddd;
     -webkit-transition: box-shadow 300ms linear;
-    transition: box-shadow 300ms linear;
+    transition: box-shadow 300ms linear; */
 }
 
-.nav .menu .signup-btn:hover {
+.nav .menu .highlight:hover {
     /* override tag a bg color transition*/
-    background-color: #ffffff; 
+    /* background-color: #ffddd5;  */
 
-    box-shadow: 0px 0px 8px #cccccc;
+    /* box-shadow: 0px 0px 8px #cccccc;
     -webkit-transition: box-shadow 100ms linear;
-    transition: box-shadow 100ms linear;
+    transition: box-shadow 100ms linear; */
 }
 
 .nav-fixed {

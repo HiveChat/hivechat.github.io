@@ -1,3 +1,4 @@
+@import "./color.css";
 @import "./font.css";
 @import "./widget.css";
 @import "./nav.css";
@@ -9,11 +10,12 @@
 
 body {
     background: #ffffff;
+    /* color: #444444; */
     /* font-family: 'Baloo Bhaina 2', cursive; */
     /*THIS IS NOT GONNA WORK, BECAUSE THIS IS THE OUTERMOST ELEMENT!!!*/
     /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
     margin: 0px;
-    font-family: sans-serif;
+    font-family: 'Baloo Bhaina 2', cursive;
 }
 
 a {
@@ -75,6 +77,41 @@ input[type=text] {
     height: 20px;
     background-color: transparent;
 }
+
+.heading {
+    /* background-color: #222222; */
+    height: 62vh;
+    padding: 60px 100px;
+    color:#555555;
+
+
+    flex-direction: row;
+    justify-content: flex-begin;
+    align-items: stretch;
+}
+
+.heading-content {
+    flex-direction: column;
+    /* background-color: #555355; */
+
+}
+
+.heading-content > h1 {
+    margin: 0;
+    font-size: 50px;
+    line-height: 120%;
+    font-weight: 500;
+
+}
+
+
+.heading-content > h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
 
 .center-items {
     display: flex;

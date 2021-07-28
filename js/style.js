@@ -5,11 +5,13 @@ function docReady(fn) {
         setTimeout(fn, 1); // call on next available tick
     else
         document.addEventListener("DOMContentLoaded", fn);
+    
 }
 
 function loadNav() {
     navs = document.getElementsByClassName("nav");
-    navSpacer = document.getElementById("nav-spacer")
+    navSpacer = document.getElementById("nav-spacer");
+    navSpacer.style.display = "none";
 
     if (navs.length == 0)
         return;
